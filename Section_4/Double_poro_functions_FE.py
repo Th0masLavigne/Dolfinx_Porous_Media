@@ -341,7 +341,7 @@ def FE_solving(dimensions, discretization, material, constitutive_law, Time_para
 	# Porosity []
 	porosity     = Constant(mesh, ScalarType(eps_r))
 	# Fluid bulk modulus [Pa]
-	Kf           = Constant(mesh, ScalarType(Kfr))
+	Kf           = Constant(mesh, ScalarType(kfr))
 	# Soil grains bulk modulus [Pa]
 	Ks           = Constant(mesh, ScalarType(ksr))
 	# Biot's coefficient []
