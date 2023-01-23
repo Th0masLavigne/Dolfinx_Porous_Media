@@ -67,5 +67,5 @@ The example of the function used for evaluation is provided [here](Appendix/appe
 
 
 [^1]: Titre, auteurs, doi
-[^2]: Titre, auteurs, doi
-[^3]: Titre, auteurs, doi
+[^2]: A.P.S. Selvadurai, A.P. Suvorov, Coupled hydro-mechanical effects in a poro-hyperelastic material, Journal of the Mechanics and Physics of Solids, Volume 91, 2016, Pages 311-333, ISSN 0022-5096, https://doi.org/10.1016/j.jmps.2016.03.005.
+[^3]: Sciumè, G. Mechanistic modeling of vascular tumor growth: an extension of Biot’s theory to hierarchical bi-compartment porous medium systems. Acta Mech 232, 1445–1478 (2021). https://doi.org/10.1007/s00707-020-02908-z
