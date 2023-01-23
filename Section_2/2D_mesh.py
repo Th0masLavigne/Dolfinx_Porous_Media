@@ -12,7 +12,7 @@ from mpi4py            import MPI
 ###################################################
 Width, Height = 1e-5, 1e-4 #[m]
 nx, ny        = 2, 40      #[ ]
-mesh  = create_rectangle(MPI.COMM_WORLD, np.array([[0,0],[Width, Height!]]), [nx,ny], cell_type=CellType.quadrilateral)
+mesh  = create_rectangle(MPI.COMM_WORLD, np.array([[0,0],[Width, Height]]), [nx,ny], cell_type=CellType.quadrilateral)
 ###################################################
 #################### Marking  #####################
 ###################################################
