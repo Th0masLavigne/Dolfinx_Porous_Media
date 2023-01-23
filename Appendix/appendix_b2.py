@@ -7,10 +7,10 @@ from mpi4py       import MPI
 #
 ## Box 
 # Dimensions of the sample
-[Length, Width, Height!] = [6e-4, 2.5e-4, 4e-5]
+[Length, Width, Height] = [6e-4, 2.5e-4, 4e-5]
 # Discretization
 [nx,ny,nz] = [30,15,8]
-mesh = create_box(MPI.COMM_WORLD,np.array([[0.0,0.0,0.0],[Length, Width, Height!]]), [nx,ny,nz], cell_type=CellType.tetrahedron)
+mesh = create_box(MPI.COMM_WORLD,np.array([[0.0,0.0,0.0],[Length, Width, Height]]), [nx,ny,nz], cell_type=CellType.tetrahedron)
 def test_on_boundary(x):
 	return (np.sqrt(np.power(x[0]-3e-4,2)+np.power(x[1],2))<=1.5e-4)
 #
