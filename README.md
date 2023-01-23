@@ -53,8 +53,6 @@ The performances of the code were evaluated and compared to the former FEniCS so
 
 This folder contains a [bi-compartment](Section_4/readme.md) model of a vascularized model, based on *Sciumè et al.*[^3] previous work. Conversely to the Cast3m implementation (staggered computation), the proposed workflow uses a monolithic solving of the weak form. 
 
-Both Minimal and complete working codes are provided.
-
 ## Appendices
 ### Apppendix A
 The 3D Terzaghi example is provided [here](Appendix/appendix_a.py).
