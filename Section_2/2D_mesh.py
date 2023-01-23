@@ -4,7 +4,7 @@
 #################### Libraries ####################
 ###################################################
 import dolfinx
-import numpy
+import numpy as np
 from dolfinx.mesh      import create_rectangle, CellType, locate_entities, meshtags
 from mpi4py            import MPI
 ###################################################
