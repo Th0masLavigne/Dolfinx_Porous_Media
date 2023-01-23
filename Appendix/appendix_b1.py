@@ -4,7 +4,7 @@ import numpy as np
 gmsh.initialize()
 #
 # box parameters
-[Length, Width, Height!] = [6e-4, 2.5e-4, 4e-5]
+[Length, Width, Height] = [6e-4, 2.5e-4, 4e-5]
 # cylinder parameters
 xc,yc,zc,dx,dy,dz, r = 6e-4/2, 0, 0, 0, 0, 4e-5, 1.5e-4
 # expected dimension of the mesh
