@@ -57,7 +57,7 @@ def epsilon(u):
 	Inputs: Displacement vector
 	Outputs: Desformation vector
 	"""
-    return sym(grad(u))
+	return sym(grad(u))
 # 
 def teff(u):
 	"""
@@ -65,7 +65,7 @@ def teff(u):
 	Inputs: displacement vector
 	Outputs: effective stress
 	"""
-    return lambda_m * nabla_div(u) * Identity(u.geometric_dimension()) + 2*mu*epsilon(u)
+	return lambda_m * nabla_div(u) * Identity(u.geometric_dimension()) + 2*mu*epsilon(u)
 # 
 def terzaghi_p(x):
 	"""
