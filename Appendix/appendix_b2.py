@@ -31,12 +31,12 @@ for _ in np.arange(2):
 	refine_tag = meshtags(mesh, fdim, refine_indices[sorted_facets_refine], refine_markers[sorted_facets_refine])
 	mesh.topology.create_entities(fdim)
 	mesh = refine(mesh, refine_indices[sorted_facets_refine])
-  #
-  def Omega_top(x):
-    return np.logical_and((x[2] == Height), (np.sqrt(np.power(x[0]-3e-4,2)+np.power(x[1],2))<=1.5e-4))
+#
+def Omega_top(x):
+	return np.logical_and((x[2] == Height), (np.sqrt(np.power(x[0]-3e-4,2)+np.power(x[1],2))<=1.5e-4))
 #
 def Omega_loading(x):
-    return np.logical_and((x[2] == Height), (np.sqrt(np.power(x[0]-3e-4,2)+np.power(x[1],2))>=1.2e-4))
+	return np.logical_and((x[2] == Height), (np.sqrt(np.power(x[0]-3e-4,2)+np.power(x[1],2))>=1.2e-4))
 #
 # Create the facet tags (identify the boundaries)
 # 1 = loading, 2 = top minus loading, 3 = bottom, 4 = left, 5 = right, 6 = Front, 7 = back

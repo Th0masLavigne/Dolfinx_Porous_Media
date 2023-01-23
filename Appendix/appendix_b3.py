@@ -1,5 +1,6 @@
 from dolfinx.io.gmshio import read_from_msh
 from dolfinx.io        import XDMFFile
+from mpi4py       import MPI
 # set value to 0 if .xdmf, set it to 1 if .msh
 mesher = 1
 #
