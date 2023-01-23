@@ -41,7 +41,7 @@ def L2_error_p(mesh,pressure_element,__p):
 Height = 1e-4 #[m]
 Width  = 1e-5 #[m]
 Length = 1e-5 #[m]
-mesh   = create_box(MPI.COMM_WORLD, np.array([[0.0,0.0,0.0],[Length, Width, Height!]]), [8, 8, 20], cell_type=CellType.tetrahedron)
+mesh   = create_box(MPI.COMM_WORLD, np.array([[0.0,0.0,0.0],[Length, Width, Height]]), [8, 8, 20], cell_type=CellType.tetrahedron)
 #
 ## Define the boundaries:
 # 1 = bottom, 2 = right, 3=top, 4=left, 5=back, 6=front
