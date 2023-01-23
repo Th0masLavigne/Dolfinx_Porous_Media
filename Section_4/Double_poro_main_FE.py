@@ -82,7 +82,7 @@ Tf        = t_ramp+t_sust    # End time
 dt_refine = 0.1
 dt_coarse = 0.1
 t=t_init
-num_steps = num_steps = int((t_refine-t_init)/dt_refine)+int((Tf-t_refine)/dt_coarse) 
+num_steps = int((t_refine-t_init)/dt_refine)+int((Tf-t_refine)/dt_coarse) 
 # 
 ## Material parameters
 Er            = 5000  
