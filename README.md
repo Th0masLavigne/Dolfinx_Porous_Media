@@ -1,6 +1,6 @@
 # Multi-compartment poroelastic models of perfused biological soft tissues: implementation in FEniCSx
 
-This repository contains the codes used to generate the example presented in *Lavigne et al.*[^1]. Porous-media modelling of confined compression columns (with one or two fluid compartments) were implemented using the FEniCSx OpenSource software. The architecture of the repository follows the one of the corresponding article.
+This repository contains the codes used to generate the example presented in *Lavigne et al.*[^1] (published as an open-source tutorial article in JMBBM journal). Porous-media modelling of confined compression columns (with one or two fluid compartments) were implemented using the FEniCSx OpenSource software. The architecture of the repository follows the one of the corresponding article.
 
 The version used of FEniCSx is v0.5.2. Pandas were integrated for the visualization (excel and csv). [Dockerfile](Dockerfile) and built images are made available. To pull the image, after having installed docker, run `th0maslavigne/dolfinx:v0.5.2`. Otherwise the image can be built by running `docker build .` in the folder of the DockerFile. Then the container can be interactively executed through the command below:
 
@@ -64,6 +64,6 @@ The example of local refinement using GMSH API, FEniCSx and their importation wi
 The example of the function used for evaluation is provided [here](Appendix/appendix_c.py)
 
 
-[^1]: T. Lavigne, S. Urcun, P-Y. Rohan, G. Sciumè, D. Baroli, S.P.A. Bordas, Multi-compartment poroelastic models of perfused biological soft tissues: implementation in FEniCSx, https://doi.org/10.48550/arXiv.2301.11256
+[^1]: T. Lavigne, S. Urcun, P-Y. Rohan, G. Sciumè, D. Baroli, S.P.A. Bordas, Single and bi-compartment poro-elastic model of perfused biological soft tissues: FEniCSx implementation and tutorial: implementation in FEniCSx, https://doi.org/10.48550/arXiv.2301.11256](https://doi.org/10.1016/j.jmbbm.2023.105902
 [^2]: A.P.S. Selvadurai, A.P. Suvorov, Coupled hydro-mechanical effects in a poro-hyperelastic material, Journal of the Mechanics and Physics of Solids, Volume 91, 2016, Pages 311-333, ISSN 0022-5096, https://doi.org/10.1016/j.jmps.2016.03.005.
 [^3]: Sciumè, G. Mechanistic modeling of vascular tumor growth: an extension of Biot’s theory to hierarchical bi-compartment porous medium systems. Acta Mech 232, 1445–1478 (2021). https://doi.org/10.1007/s00707-020-02908-z
